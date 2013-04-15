@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
                  'Evan Cordell'       => 'http://github.com/ecordell',
                  'Greg Combs'         => 'http://github.com/grgcombs',
                  'AJ Schuster'        => 'http://github.com/schustafa' }
-  s.source   = { :git => 'git://github.com/schustafa/ActionSheetPicker.git', :commit => '210e8860b912b3c295e1babee9a2266ef912b39b' }
+  s.source   = { :git => 'https://github.com/plackemacher/ActionSheetPicker.git', :commit => '210e8860b912b3c295e1babee9a2266ef912b39b' }
   s.platform = :ios
   s.source_files = 'ActionSheetPicker.h', 'Pickers/*.{h,m}' 
-  s.clean_paths = FileList['*'].exclude(/(ActionSheetPicker.h|Pickers|README.md|LICENSE)$/)
+  s.preserve_paths = FileList['*'].exclude(/(ActionSheetPicker.h|Pickers|README.md|LICENSE)$/)
   s.framework = 'UIKit'
 end
